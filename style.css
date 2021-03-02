@@ -1,0 +1,283 @@
+/*Global STyle*/
+body{
+	font: 15px/1.5 Georgia, Times, serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.btn {
+	height: 38px;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #400040;
+	color: #fff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/*header*/
+header{
+	background-color: #c0c0c0;
+	color: #400040;
+	padding-top: 30px;
+	min-height: 70px;
+	
+} 
+
+header a{
+	color: #000;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: ;
+	font-size: 16px;
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #sitename{
+	float: left;
+}
+
+header #sitename h1{
+	margin: 0;
+	font-size: 40px;
+	background-color: #400040;
+	color: #fff;
+}
+
+header nav{
+	float: right;
+	margin-top: -5px;
+}
+
+header .active a{
+	font-weight: bold;
+	background-color: #;
+	color: #ffe6ff;
+}
+
+header a:hover{
+	font-weight: bolder;
+	background-color: #400040;
+	color: #fff;	
+}
+
+header .signin a{
+	padding-left: 90px;
+}
+header .signin a:hover{
+	font-weight: bolder;
+	color:white;
+	background-color: #c0c0c0;
+}
+
+
+/* sitesearch*/
+#sitesearch{
+	min-height: 300px;
+	background-color: #c0c0c0;
+	border-bottom: #400040 2px solid;
+	text-align: center;
+	color: 
+}
+
+#sitesearch h1{
+	margin-top: 15px;
+	font-size: 45px;
+	margin-bottom: 10px;
+}
+
+#sitesearch p{
+	font-size: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #ffe6ff;
+}
+
+#sitesearch input[type=text]{
+	height: 70px;
+	width: 75%;
+	border: 2px solid #ffe6ff;
+	border-radius: 15px 50px;
+	background-color: #ffe6ff;
+	font-size: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	color: #fff;
+
+}
+
+#sitesearch input[type=text]:focus{
+	background-color: #fff;
+	color: #400040;
+}
+
+#sitesearch img{
+	height: 45px;
+	width: 4.5%;
+}
+
+/*Home Content*/
+#sitecontent {
+	margin-top: 20px;
+}
+
+#sitecontent .content {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+
+/*Content in other pages*/
+#maincontent {
+	border-top: #400040 2px solid;
+	text-align: ;
+}
+
+#maintitle {
+	text-decoration: unset;
+	font-size: 30px;
+	text-transform: uppercase;
+	border-bottom: #ccc solid 2px;
+}
+
+
+/*Forms*/
+#mainform {
+	font-size: 16px;
+	font-weight: ;
+	text-align: center;
+	padding-bottom: 20px;
+	width: ;
+}
+
+article #mainform input{
+	margin-bottom: 10px;
+	width: 30%;
+	height: 25px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+article #mainform textarea{
+	margin-bottom: 10px;
+	width: 30%;
+	height: 95px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+article #mainform input[type=checkbox] {
+	width: 2%;
+	height: 15px;
+}
+
+.formhead {
+	float: left;
+	font-size: 12px;
+}
+
+/*Footer*/
+footer {
+	padding: 20px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	text-align: ;
+	background-color: #c0c0c0;
+	border-top: #400040 1px solid;
+}
+
+footer #copy{
+	text-align: right;
+}	
+
+footer #letter{
+	padding-left: 120px;
+}
+
+footer h3{
+	padding-left: 120px;
+}
+
+footer #letter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Search page */
+#searchform {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#searchform input[type="text"] {
+	padding: 4px;
+	height: 35px;
+	width: 60%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#searchform button {
+	height: 38px;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #400040;
+	color: #fff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/*Media Queries - To set what to display at the minimum width. Resize your browser to see changes */
+/*you can put "body{ display: none; }" to show nothing*/
+
+@media(max-width: 768px){
+	header #sitename,
+	header nav,
+	header nav li,
+	
+	#sitecontent .content{
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	header {
+		border-bottom: #ccc solid 2px;
+	}
+	footer #letter button{
+		display: block;
+		padding: 0;
+		width: 81%;
+	}
+	footer #letter form input[type=email]{
+		width: 100%;
+		margin-bottom: 5px;
+		padding: 0;
+	}
+}
+
+
+
+
+
+/*Fully designed from scratch by Salaudeen Hammad "Supreme" */
